@@ -92,7 +92,7 @@ def sat_solver(clauses):
         if valuation is None:
             return None
         else:
-            valuation.append(assignment)
+            valuation.append(-assignment)
             return valuation
     else:
         valuation.append(assignment)
